@@ -55,3 +55,7 @@
 www:
   type: CNAME
   value: valencerobotics.github.io.
+
+links:
+  type: CNAME
+  value: linktr.ee/valencerobotics
