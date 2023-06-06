@@ -1,0 +1,57 @@
+---
+# ;; A Records
+# valencerobotics.org.	1	IN	A	185.199.108.153
+# valencerobotics.org.	1	IN	A	185.199.111.153
+# valencerobotics.org.	1	IN	A	185.199.109.153
+# valencerobotics.org.	1	IN	A	185.199.110.153
+
+# ;; AAAA Records
+# valencerobotics.org.	1	IN	AAAA	2606:50c0:8003::153
+# valencerobotics.org.	1	IN	AAAA	2606:50c0:8002::153
+# valencerobotics.org.	1	IN	AAAA	2606:50c0:8001::153
+# valencerobotics.org.	1	IN	AAAA	2606:50c0:8000::153
+
+# ;; CNAME Records
+# www.valencerobotics.org.	1	IN	CNAME	valencerobotics.github.io.
+
+# ;; MX Records
+# valencerobotics.org.	1	IN	MX	10 alt4.aspmx.l.google.com.
+# valencerobotics.org.	1	IN	MX	5 alt1.aspmx.l.google.com.
+# valencerobotics.org.	1	IN	MX	10 alt3.aspmx.l.google.com.
+# valencerobotics.org.	1	IN	MX	5 alt2.aspmx.l.google.com.
+# valencerobotics.org.	1	IN	MX	1 aspmx.l.google.com.
+
+# ;; TXT Records
+# valencerobotics.org.	1	IN	TXT	"google-site-verification=tgE9rlYj-U5w-Zh1-PIYDmYfmRLyHoV2ZMDiwFsQ-bg"
+
+"":
+  - type: A
+    values:
+      - 185.199.108.153
+      - 185.199.109.153
+      - 185.199.110.153
+      - 185.199.111.153
+  - type: AAAA
+    values:
+      - 2606:50c0:8000::153
+      - 2606:50c0:8001::153
+      - 2606:50c0:8002::153
+      - 2606:50c0:8003::153
+  - type: MX
+    values:
+      - exchange: aspmx.l.google.com.
+        preference: 1
+      - exchange: alt1.aspmx.l.google.com.
+        preference: 5
+      - exchange: alt2.aspmx.l.google.com.
+        preference: 5
+      - exchange: alt3.aspmx.l.google.com.
+        preference: 10
+      - exchange: alt4.aspmx.l.google.com.
+        preference: 10
+  - type: TXT
+    values:
+      - google-site-verification=tgE9rlYj-U5w-Zh1-PIYDmYfmRLyHoV2ZMDiwFsQ-bg
+www:
+  type: CNAME
+  value: valencerobotics.github.io.

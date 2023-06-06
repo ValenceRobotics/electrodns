@@ -1,0 +1,17 @@
+---
+providers:
+  config:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./
+    default_ttl: 300
+    enforce_order: False
+  cloudflare:
+    class: octodns_cloudflare.CloudflareProvider
+    token: env/CLOUDFLARE_TOKEN
+
+zones:
+  valencerobotics.org.:
+    sources:
+      - config
+    targets:
+      - cloudflare
