@@ -25,18 +25,21 @@
 # valencerobotics.org.	1	IN	TXT	"google-site-verification=tgE9rlYj-U5w-Zh1-PIYDmYfmRLyHoV2ZMDiwFsQ-bg"
 
 "":
-  - type: A
+  # - type: A
+  #   values:
+  #     - 185.199.108.153
+  #     - 185.199.109.153
+  #     - 185.199.110.153
+  #     - 185.199.111.153
+  # - type: AAAA
+  #   values:
+  #     - 2606:50c0:8000::153
+  #     - 2606:50c0:8001::153
+  #     - 2606:50c0:8002::153
+  #     - 2606:50c0:8003::153
+  - type: A 
     values:
-      - 185.199.108.153
-      - 185.199.109.153
-      - 185.199.110.153
-      - 185.199.111.153
-  - type: AAAA
-    values:
-      - 2606:50c0:8000::153
-      - 2606:50c0:8001::153
-      - 2606:50c0:8002::153
-      - 2606:50c0:8003::153
+      - 76.76.21.21 # Cloudflare
   - type: MX
     values:
       - exchange: aspmx.l.google.com.
@@ -54,4 +57,4 @@
       - google-site-verification=tgE9rlYj-U5w-Zh1-PIYDmYfmRLyHoV2ZMDiwFsQ-bg
 www:
   type: CNAME
-  value: valencerobotics.github.io.
+  value: cname.vercel-dns.com. # Vercel
